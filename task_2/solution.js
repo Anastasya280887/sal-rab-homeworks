@@ -11,7 +11,7 @@ function calcShipping(sum, min, shipping) {
     if (productsSum == 0 || productsSum >= freeShippingMinSum) {
         shippingSum = 0;
       }  
-      else if (productsSum > 0) && (productsSum < freeShippingMinSum) {
+      else (productsSum > 0) && (productsSum < freeShippingMinSum) {
         shippingSum = shippingPrice;
       }      
     // если productsSum равно 0,
@@ -39,7 +39,7 @@ function calcDiscount(sum, min, discount) {
     // создайте переменную discountSum
     let discountSum;
 
-      if (productsSum >= discountMinSum){
+      if (productsSum >= discountMinSum) {
       discountSum = (discountPart / 100 * productsSum);
       }
       else {
